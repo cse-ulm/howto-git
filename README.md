@@ -143,11 +143,30 @@ The `git fetch`  command is used to download any changes that have been made to 
 
 You can use `git fetch` before you start working on your local branch to ensure that you have the latest changes from the remote repository. By doing this, you can avoid conflicts that may arise if someone else has made changes to the same files you're working on.
 
-## Branches
+## Branching and Merging
 
-### - git switch
+### Creating a new branch
 
-## Best practices 
+### Switching between branches
 
-### - git rebase
+### Merging branches
 
+### Resolving merge conflicts
+
+## Advanced Commands
+
+### git log
+
+### git reset
+
+### git revert
+
+### git stash
+
+## Best Practices
+
+### Writing good commit messages
+
+### Using branching effectively
+
+### Keeping your repository clean
