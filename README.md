@@ -10,10 +10,15 @@ Before you can start using Git, you need to install it on your computer and conf
 ### Installing Git
 If you don't already have Git installed on your computer, you can [download](https://git-scm.com/downloads) it from the Git website. Follow the instructions for your operating system to install Git.
 
+Once you've installed Git, you can check the version by opening a terminal window and running the command:
+```bash
+git --version
+```
+If you see a version number printed to the console, you've successfully installed Git!
 ### Configuring Git
 Once you have Git installed, you need to configure it with your name and email address. Open a terminal or command prompt and run the following commands, replacing "Your Name" and "you@example.com" with your own information:
 
-```
+```bash
 git config --global user.name "Your Name"
 git config --global user.email you@example.com
 ```
