@@ -47,18 +47,75 @@ This will create a new directory with the same name as the repository and clone 
 
 That's it! You now have a Git repository that you can use to manage your project's code.
 
-## Basics
-### - git status 
+## Basic Commands
+Once you have a Git repository set up, you can start using some basic commands to manage your files and track changes. Here are some of the most common Git commands you'll need to know:
 
-### - git add
+### [git status](https://git-scm.com/docs/git-status)
 
-### - git commit
+The git status command shows you the current state of your repository, including which files are staged (ready to be committed) and which files have been modified but not yet staged. 
+Let's create a new file in the repository. Run the following command:
+```bash
+touch README.md
+```
+This will create a new file called README.md in the current directory.
+To see the current status of the repository, run the following command:
+```bash
+git status
+```
+You should see the following output:
+```bash
+On branch main
 
-### - git pull
+No commits yet
 
-### - git push 
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
 
-### - git fetch
+nothing added to commit but untracked files present (use "git add" to track)
+```
+This output tells us that we're on the `main` branch, there are no commits yet, and there's a new file called `README.md` that's untracked.
+
+### [git add](https://git-scm.com/docs/git-add)
+The git add command is used to stage changes to your repository. You can add specific files or directories by name.
+
+To start tracking changes to the `README.md` file, we need to add it to the staging area. Run the following command:
+```bash
+git add README.md
+```
+Now if we run `git status` again, we should see the following output:
+```bash
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+```
+This output tells us that we've added the README.md file to the staging area, and it's ready to be committed.
+
+With `git add .` you can stage all files in the directory.
+
+### [git commit](https://git-scm.com/docs/git-commit)
+To commit the changes, run the following command:
+```bash
+git commit -m "Add README.md file"
+```
+This will create a new commit with the message "Add README.md file".
+
+Now if we run git status again, we should see the following output:
+```bash
+On branch master
+nothing to commit, working tree clean
+```
+This output tells us that there are no changes to commit, and the working directory is clean.
+
+### [git diff](https://git-scm.com/docs/git-diff)
+
+### [git pull](https://git-scm.com/docs/git-pull)
+
+### [git push](https://git-scm.com/docs/git-push)
 
 ## Branches
 
