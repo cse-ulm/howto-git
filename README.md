@@ -123,8 +123,20 @@ index e69de29..1154593 100644
 This output shows that we added a new line to the `README.md` file. The lines with a `-` indicate lines that were removed, and the lines with a `+` indicate lines that were added.
 
 ### [git pull](https://git-scm.com/docs/git-pull)
+The `git pull` command is used to fetch and merge changes from a remote repository. It is often used when collaborating with others on a project.
+
+For example, if you're working on the main branch and want to pull changes from the origin remote repository, run the following command:
+```bash
+git pull origin main
+```
 
 ### [git push](https://git-scm.com/docs/git-push)
+The `git push` command is used to push your changes to a remote repository. This is typically used when you want to share your changes with others or backup your work.
+
+For example, if you're working on the main branch and want to push your changes to the origin remote repository, run the following command:
+```bash
+git push origin main
+```
 
 ## Branches
 
