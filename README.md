@@ -138,6 +138,11 @@ For example, if you're working on the main branch and want to push your changes 
 git push origin main
 ```
 
+### [git fetch](https://git-scm.com/docs/git-fetch)
+The `git fetch`  command is used to download any changes that have been made to a remote repository and store them in your local repository. However, unlike the `git pull` command, git fetch only downloads the changes and does not automatically merge them into your local branch. This means that after running `git fetch`, you will have the updated changes available in your local repository, but you will need to manually merge them into your local branch if you want to apply them.
+
+You can use `git fetch` before you start working on your local branch to ensure that you have the latest changes from the remote repository. By doing this, you can avoid conflicts that may arise if someone else has made changes to the same files you're working on.
+
 ## Branches
 
 ### - git switch
