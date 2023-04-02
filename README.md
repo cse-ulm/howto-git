@@ -53,15 +53,8 @@ Once you have a Git repository set up, you can start using some basic commands t
 ### [git status](https://git-scm.com/docs/git-status)
 
 The git status command shows you the current state of your repository, including which files are staged (ready to be committed) and which files have been modified but not yet staged. 
-Let's create a new file in the repository. Run the following command:
-```bash
-touch README.md
-```
-This will create a new file called README.md in the current directory.
-To see the current status of the repository, run the following command:
-```bash
-git status
-```
+Create a new file `README.md` in the repository.
+To see the current status of the repository, run `git status`.
 You should see the following output:
 ```bash
 On branch main
