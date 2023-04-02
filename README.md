@@ -104,14 +104,30 @@ git commit -m "Add README.md file"
 ```
 This will create a new commit with the message "Add README.md file".
 
-Now if we run git status again, we should see the following output:
+Now if we run `git status` again, we should see the following output:
 ```bash
-On branch master
+On branch main
 nothing to commit, working tree clean
 ```
 This output tells us that there are no changes to commit, and the working directory is clean.
 
 ### [git diff](https://git-scm.com/docs/git-diff)
+The `git diff` command shows the differences between the current state of your files and the most recent commit. Let's make some changes to the `README.md` file and then use `git diff` to see the differences.
+
+Open the README.md file and add the following line at the end of the file: `This is a new line in the README file`.
+Save the file and then run `git diff README.md`.
+
+This will show you the differences between the README.md file in the working directory and the version in the staging area. You should see output similar to the following:
+
+```bash
+diff --git a/README.md b/README.md
+index e69de29..1154593 100644
+--- a/README.md
++++ b/README.md
+@@ -0,0 +1 @@
++This is a new line in the README file
+```
+This output shows that we added a new line to the `README.md` file. The lines with a `-` indicate lines that were removed, and the lines with a `+` indicate lines that were added.
 
 ### [git pull](https://git-scm.com/docs/git-pull)
 
